@@ -1,0 +1,54 @@
+.landing{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.landing{
+    grid-template-columns: 550px 600px;
+    justify-content: center;
+    width: max-content;
+    margin: 1rem auto;
+}
+.landing .swiper-slide img{
+    height: 100%;
+    width: auto;
+    height: 420px
+}
+
+.swiper{
+    width:680px;
+    height:470px;
+}
+.swiper-slide{
+    text-align: center;
+}
+.landing > div{
+    align-self: center;
+}
+.landing > div:first-of-type{
+    padding:0.5rem;
+}
+.landing h1{
+    font-size:2rem;
+    font-weight:400;
+    margin: 0rem 0rem 1rem 1rem;
+}
+.landing > div:first-of-type button{
+    padding:0.7rem 2rem;
+    font-weight:500;
+    font-size:1rem;
+    margin: 2rem 0rem 0rem 4rem;
+    color: white;
+    background-color: #27AAE1;
+    border:none;
+    border-radius: 5px;
+}
+.landing > div:last-of-type{
+    position: relative;
+    z-index: -2;
+}
+.landing > p{
+    grid-area: 2/1/ span 1/ span 2;
+    text-align: center;
+}
