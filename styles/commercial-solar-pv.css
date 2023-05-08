@@ -1,0 +1,49 @@
+section{
+    display:grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.section{
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    column-gap: 1rem;
+    margin: 8rem auto;
+}
+
+.section .image{
+    height: 420px;
+    justify-self: space-around;
+}
+
+.section .image img{
+    height: 100%;
+    width: auto;
+}
+.section:nth-of-type(even) .content{
+    grid-area: 1/ 2/ span 1/ span 1;
+}
+.section .content{
+    justify-self:space-around;
+}
+.section .content{
+    align-self: center;
+    max-width: 600px;
+}
+.section .image{
+    justify-self:center;
+}
+.section:nth-of-type(odd) .content{
+    justify-self: right;
+}
+.content ol{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.section .content h2{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.section .content p{
+    margin-bottom: 2rem;
+}

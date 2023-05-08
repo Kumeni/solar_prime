@@ -1,0 +1,14 @@
+.contact_us{
+    padding: 0.8rem 2rem;
+    background-color: #27AAE1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.more{
+    padding: 0.8rem 2rem;
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 5px;
+    text-decoration: none;
+}

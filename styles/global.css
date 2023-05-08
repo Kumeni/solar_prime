@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-a, p, li, h1, button{
+a, p, li, h1, button, h2, h3{
     font-family: 'Poppins', sans-serif;
 }

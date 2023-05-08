@@ -1,0 +1,91 @@
+.services > div, .services_content > div, .why_us > ul{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+.services{
+    margin-top:4rem;
+}
+
+.services h2, .why_us h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.services > div{
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    align-content: center;
+    margin: 8rem auto;
+}
+
+.services_image{
+    height:430px;
+    justify-self: center;
+}
+
+.services_image > img{
+    height: 100%;
+    width: auto;
+}
+
+.services > div:nth-of-type(even) .services_image{
+    grid-area: 1/ 1/ span 1/ span 1;
+}
+
+.services > div:nth-of-type(even) .services_content{
+    grid-area:1/ 2/ span 1/ span 1;
+}
+
+.services > div:nth-of-type(odd) .services_content{
+    justify-self: right;
+}
+.services_content{
+    align-self: center;
+    max-width:600px;
+}
+.services_content > div{
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    width: 80%;
+}
+
+.services_content h3{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.services_content p{
+    margin-bottom: 1rem;
+}
+.why_us{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+.why_us h2{
+    margin-bottom: 2rem;
+}
+.why_us ul{
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    list-style: none;
+}
+.why_us li{
+    margin:0rem 1rem;
+}
+.why_us_img{
+    width: 100px;
+    height: 100px;
+    margin: 0rem auto 2rem auto;
+}
+.why_us p{
+    max-width: 230px;
+    text-align:center;
+    font-weight: 500;
+}
+.why_us_img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
