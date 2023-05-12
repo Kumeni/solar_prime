@@ -15,10 +15,43 @@
     width: auto;
     height: 420px
 }
-
+@media (max-width: 1320px){
+    .landing .swiper-slide img{
+        height:350px;
+    }
+}
 .swiper{
     width:680px;
     height:470px;
+}
+@media (max-width: 1320px){
+    .swiper{
+        width:600px;
+        height:400px;
+    }
+}
+@media (max-width: 704px){
+    .swiper{
+        width: 100vw;
+    }
+    .swiper-slide{
+        display: grid;
+        grid-template-columns: auto;
+        align-content: center;
+        justify-content: center;
+    }
+    .landing .swiper-slide img{
+        max-width: 92vw;
+        height: auto;
+    }
+    .swiper{
+        width: 100vw;
+    }
+}
+@media(max-width: 425px){
+    .swiper{
+        height:340px;
+    }
 }
 .swiper-slide{
     text-align: center;
@@ -34,6 +67,12 @@
     font-weight:400;
     margin: 0rem 0rem 1rem 1rem;
 }
+@media (max-width: 768px){
+    .landing h1{
+        /* font-size: 1.5rem; */
+        text-align: center;
+    }
+}
 .landing > div:first-of-type button{
     padding:0.7rem 2rem;
     font-weight:500;
@@ -44,6 +83,12 @@
     border:none;
     border-radius: 5px;
 }
+@media (max-width: 768px){
+    .landing > div:first-of-type > div{
+        width: max-content;
+        margin: 2rem auto 2rem auto;
+    }
+}
 .landing > div:last-of-type{
     position: relative;
     z-index: -2;
@@ -51,4 +96,20 @@
 .landing > p{
     grid-area: 2/1/ span 1/ span 2;
     text-align: center;
+}
+@media (max-width: 1160px){
+    .landing{
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto;
+    }
+    .landing > p{
+        grid-area: unset;
+    }
+    .landing > div:last-of-type{
+        grid-area: 1/ 1/ span 1/ span 1;
+    }
+    .landing > div:first-of-type{
+        grid-area:2/ 1/ span 1/ span 1;
+        padding: 0.5rem 1rem;
+    }
 }

@@ -1,0 +1,58 @@
+main > section, .form > form{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+main{
+    min-height:70vh;
+}
+main > section{
+    grid-template-columns: max-content 700px;
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 3rem 0rem;
+}
+main > h1{
+    font-weight: 400;
+    text-align: center;
+}
+main > p{
+    text-align: center;
+}
+main > section > div:first-of-type{
+    width:max-content;
+    justify-self: right;
+    /* border: 1px solid black; */
+}
+main > section > div:last-of-type{
+    width: 90%;
+}
+main > section > div{
+    margin: 1rem 0rem;
+}
+main > section > div:first-of-type > p{
+    text-align: center;
+}
+main > section > div:first-of-type ul{
+    list-style: none;
+}
+.form > h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.form > form{
+    grid-template-columns: 100px auto;
+    grid-template-rows: repeat(3, auto);
+    row-gap:1rem;
+    column-gap:0.5rem;
+}
+.form > form label{
+    font-weight: 600;
+}
+.form > form input, .form > form textarea{
+    display: block;
+    width: 100%;
+    padding:0.2rem 0.5rem;
+}

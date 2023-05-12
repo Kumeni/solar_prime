@@ -13,7 +13,6 @@
     top: 0px;
     padding:0.5rem 5rem 0rem 5rem;
     background-color: rgba(255, 255, 255, 0.8);
-    /* border: 1px solid black; */
 }
 .header ul{
     align-self: center;
@@ -64,4 +63,46 @@
 }
 .header_services > div:first-of-type:hover{
     cursor: pointer;
+}
+.bars,.small{
+    display: none;
+}
+.small{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+}
+.small > h1{
+    font-size:1.4rem;
+    font-weight: 500;
+}
+.bars{
+    width:33px;
+    height:33px;
+    align-self: center;
+}
+.bars > div {
+    background-color:black;
+    height:2px;
+    margin:6px 0px;
+    transition: width 0.2s;
+}
+
+.bars > div:nth-of-type(2){
+    width:50%;
+}
+.bars > div:last-of-type{
+    width:25%;
+}
+@media(max-width: 767px){
+    .header{
+        padding:1rem 1.5rem 1rem 1.5rem;
+        border: 1px solid rgb(210, 210, 210);
+    }
+    .logo, .header_links{
+        display: none;
+    }
+    .bars, .small{
+        display: block;
+    }
 }

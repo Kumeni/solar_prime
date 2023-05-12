@@ -23,25 +23,35 @@
 <body>
     <header class = "header">
         <div class = "logo">
-            <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            <a href="./">
+                <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            </a>
         </div>
+        <a class="small" href="./">
+            <h1>SOLAR PRIME</h1>
+        </a>
         <ul class="header_links">
             <li class="header_services">
                 <div>Services &darr;</div>
                 <div>
                     <ul>
-                        <a href="#">Commercial Solar PV</a>
-                        <a href="#">Residential Solar PV System</a>
-                        <a href="#">Backup Systems</a>
-                        <a href="#">Load Evaluation, calculation & system design</a>
-                        <a href="#">Consulation</a>
+                        <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                        <a href="./residential-solar-pv.html">Residential Solar PV System</a>
+                        <a href="./battery-backup-systems.html">Backup Systems</a>
+                        <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, calculation & system design</a>
+                        <a href="./consultation.html">Consulation</a>
                     </ul>
                 </div>
             </li>
-            <a href="#">Shop</a>
+            <a href="./shop.html">Shop</a>
             <!-- <a href="#">About us</a> -->
-            <a href="#">Contact us</a>
+            <a href="./contact-us.html">Contact us</a>
         </ul>
+        <div id="menu_bars" class="bars" onclick="handleMenuClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <main>
         <section class="landing">
@@ -55,7 +65,9 @@
                     the benefits of solar power. Contact us today to learn more and take the first
                     step towards a brighter, more sustainable future. -->
                 </p>
-                <button>CONTACT US</button>
+                <div>
+                    <a class="contact_us" href="#">CONTACT US</a>
+                </div>
             </div>
             <div>
                 <!-- Slider main container -->
@@ -96,8 +108,9 @@
         <section class = "services">
             <h2>Our services</h2>
             <div>
+                <h3 class="small">1. Commercial Solar PV</h3>
                 <div class = "services_content">
-                    <h3>1. Commercial Solar PV</h3>
+                    <h3 class="large">1. Commercial Solar PV</h3>
                     <p>
                         To offset the high cost of energy consumption or to rely less on utility power, we install Grid-tied systems
                         for commercial use. These systems reduce the dependency on the grid and offset utility power usage 
@@ -113,8 +126,9 @@
                 </div>
             </div>
             <div>
+                <h3 class="small">2. Residential Solar PV System</h3>
                 <div class = "services_content">
-                    <h3>2. Residential Solar PV System</h3>
+                    <h3 class="large">2. Residential Solar PV System</h3>
                     <p>
                         In areas without access to grid power, we offer off-grid systems which harness the available sun
                         to generate power. These systems can be small home systems or can be commercial systems.
@@ -131,8 +145,9 @@
                 </div>
             </div>
             <div>
+                <h3 class="small">3. Battery Backup Systems</h3>
                 <div class = "services_content">
-                    <h3>3. Battery Backup Systems</h3>
+                    <h3 class="large">3. Battery Backup Systems</h3>
                     <p>
                         We install Power backup systems as a way to keep things operating during power outages. This backup
                         systems can be for running the entire house or business or can be for essential loads such as security or
@@ -140,7 +155,7 @@
                     </p>
                     <div>
                         <a class="contact_us" href="#">CONTACT US</a>
-                        <a class="more" href="#">MORE</a>
+                        <a class="more" href="./battery-backup-systems.html">MORE</a>
                     </div>
                 </div>
                 <div class = "services_image">
@@ -148,8 +163,9 @@
                 </div>
             </div>
             <div>
+                <h3 class="small">4. Load Evaluation, Calculation & System Design</h3>
                 <div class = "services_content">
-                    <h3>4. Load Evaluation, Calculation & System Design</h3>
+                    <h3 class="large">4. Load Evaluation, Calculation & System Design</h3>
                     <p>
                         Load evaluation is very crucial in designing a solar system. When designing a grid-tied system it is
                         important to note how much energy is needed as a system is adequate and efficient when utilized
@@ -157,7 +173,7 @@
                     </p>
                     <div>
                         <a class="contact_us" href="#">CONTACT US</a>
-                        <a class="more" href="#">MORE</a>
+                        <a class="more" href="./load-evaluation-calculation-and-system-design.html">MORE</a>
                     </div>
                 </div>
                 <div class = "services_image">
@@ -165,16 +181,17 @@
                 </div>
             </div>
             <div>
+                <h3 class="small">5. Consultation</h3>
                 <div class = "services_content">
-                    <h3>6. Consultation</h3>
+                    <h3 class="large">5. Consultation</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                        aliquip ex ea commodo consequat
+                        It's essential to have 
+                        a reliable backup energy system in place. If you're looking for a professional consultation
+                        on power backup systems installation, look no further than our Solar Prime.
                     </p>
                     <div>
                         <a class="contact_us" href="#">CONTACT US</a>
-                        <a class="more" href="#">MORE</a>
+                        <a class="more" href="./consultation.html">MORE</a>
                     </div>
                 </div>
                 <div class = "services_image">
@@ -224,22 +241,23 @@
         <div class="footer_links">
             <ul>
                 <li>Important links</li>
-                <a href = "#">Homepage</a>
-                <a href = "#">About us</a>
-                <a href = "#">Contact us</a>
+                <a href = "./">Homepage</a>
+                <a href = "./about-us.html">About us</a>
+                <a href = "./contact-us.html">Contact us</a>
             </ul>
             <div></div>
             <ul>
                 <li>Our services</li>
-                <a href="#">Commercial Solar PV</a>
-                <a href="#">Residential Solar System</a>
-                <a href="#">Backup systems</a>
-                <a href="#">Load Evaluation, Calculation & System design</a>
-                <a href="#">Consultancy</a>
+                <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                <a href="./residential-solar-pv.html">Residential Solar System</a>
+                <a href="./battery-backup-systems.html">Backup systems</a>
+                <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, Calculation & System design</a>
+                <a href="./consultation.html">Consultancy</a>
             </ul>
         </div>
-        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
+        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
+    <script src = "./scripts/menu_click.js"></script>
     <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
     <script src = "./scripts/swiper/initialize-swiper.js"></script>
 </body>

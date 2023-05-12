@@ -1,0 +1,63 @@
+.section{
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+}
+
+.section{
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 2rem;
+    margin: 8rem auto;
+}
+.section .image{
+    height:450px;
+}
+.image img{
+    height: 100%;
+    width: auto;
+}
+.section:nth-of-type(even) .image{
+    grid-area: 1/1/span 1/ span 1;
+    justify-self: center;
+}
+.section:nth-of-type(odd) .content{
+    justify-self: right;
+}
+.section .content{
+    width:90%;
+}
+.content{
+    align-self: center;
+}
+.section h2{
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+.section .content p{
+    margin-bottom: 2rem;
+}
+.article{
+    margin-bottom: 8rem;
+}
+.article .content > h2{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.article .content{
+    max-width: 1000px;
+    margin:auto;
+}
+
+.article .content > ol{
+    margin: 2rem 0rem 2rem 2rem;
+}
+.article .content > div{
+    margin:auto;
+    width:max-content;
+}
+.conclusion .content > div{
+    margin-top: 3rem;
+}

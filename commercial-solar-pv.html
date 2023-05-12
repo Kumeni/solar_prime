@@ -23,25 +23,35 @@
 <body>
     <header class = "header">
         <div class = "logo">
-            <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            <a href="./">
+                <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            </a>
         </div>
+        <a class="small" href="./">
+            <h1>SOLAR PRIME</h1>
+        </a>
         <ul class="header_links">
             <li class="header_services">
                 <div>Services &darr;</div>
                 <div>
                     <ul>
-                        <a href="#">Commercial Solar PV</a>
-                        <a href="#">Residential Solar PV System</a>
-                        <a href="#">Backup Systems</a>
-                        <a href="#">Load Evaluation, calculation & system design</a>
-                        <a href="#">Consulation</a>
+                        <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                        <a href="./residential-solar-pv.html">Residential Solar PV System</a>
+                        <a href="./battery-backup-systems.html">Backup Systems</a>
+                        <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, calculation & system design</a>
+                        <a href="./consultation.html">Consulation</a>
                     </ul>
                 </div>
             </li>
-            <a href="#">Shop</a>
+            <a href="./shop.html">Shop</a>
             <!-- <a href="#">About us</a> -->
-            <a href="#">Contact us</a>
+            <a href="./contact-us.html">Contact us</a>
         </ul>
+        <div id="menu_bars" class="bars" onclick="handleMenuClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <main>
         <section class="landing">
@@ -67,14 +77,23 @@
                         <img src="./images/commercial solar panel installation.png" alt="commercial solar panel installation"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/commercial solar pv installation.png" alt="commercial solar pv installation"/>
+                        <img src="./images/roof mount commercial solar pv in kenya.png" alt="commercial solar pv mounted on industrial roof" />
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="./images/residential solar pv installation.png" alt="residential solar pv installation"/>
+                        <img src="./images/commercial solar pv.png" alt="commercial solar pv mounted on the ground" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/battery backup.png" alt="battery backup"/>
+                        <img src="./images/commercial solar pv_1.png" alt="commercial solar pv mounted on roof top" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/commercial monocrystalline solar pv.png" alt="commercial monocrystalline solar pv mounted on roof top" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/off-grid solar pv panels.png" alt="commercial off-grid polycrystalline solar pv mounted on roof top" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/commercial solar pv on company roof.png" alt="commercial solar pv mounted on roof top" />
                     </div>
                     <!-- <div class="swiper-slide">
                         <img src="./images/office.png" alt="office"/>
@@ -208,22 +227,23 @@
         <div class="footer_links">
             <ul>
                 <li>Important links</li>
-                <a href = "#">Homepage</a>
-                <a href = "#">About us</a>
-                <a href = "#">Contact us</a>
+                <a href = "./">Homepage</a>
+                <a href = "./about-us.html">About us</a>
+                <a href = "./contact-us.html">Contact us</a>
             </ul>
             <div></div>
             <ul>
                 <li>Our services</li>
-                <a href="#">Commercial Solar PV</a>
-                <a href="#">Residential Solar System</a>
-                <a href="#">Backup systems</a>
-                <a href="#">Load Evaluation, Calculation & System design</a>
-                <a href="#">Consultancy</a>
+                <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                <a href="./residential-solar-pv.html">Residential Solar System</a>
+                <a href="./battery-backup-systems.html">Backup systems</a>
+                <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, Calculation & System design</a>
+                <a href="./consultation.html">Consultancy</a>
             </ul>
         </div>
-        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
+        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
+    <script src = "./scripts/menu_click.js"></script>
     <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
     <script src = "./scripts/swiper/initialize-swiper.js"></script>
 </body>

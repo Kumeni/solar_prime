@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/landing.css" />
+    <link rel="stylesheet" href="./styles/actionButtons.css" />
+    <link rel="stylesheet" href="./styles/consultation.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
 
     <title>Document</title>
@@ -20,25 +23,35 @@
 <body>
     <header class = "header">
         <div class = "logo">
-            <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            <a href="./">
+                <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
+            </a>
         </div>
+        <a class="small" href="./">
+            <h1>SOLAR PRIME</h1>
+        </a>
         <ul class="header_links">
             <li class="header_services">
                 <div>Services &darr;</div>
                 <div>
                     <ul>
-                        <a href="#">Commercial Solar PV</a>
-                        <a href="#">Residential Solar PV System</a>
-                        <a href="#">Backup Systems</a>
-                        <a href="#">Load Evaluation, calculation & system design</a>
-                        <a href="#">Consulation</a>
+                        <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                        <a href="./residential-solar-pv.html">Residential Solar PV System</a>
+                        <a href="./battery-backup-systems.html">Backup Systems</a>
+                        <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, calculation & system design</a>
+                        <a href="./consultation.html">Consulation</a>
                     </ul>
                 </div>
             </li>
-            <a href="#">Shop</a>
+            <a href="./shop.html">Shop</a>
             <!-- <a href="#">About us</a> -->
-            <a href="#">Contact us</a>
+            <a href="./contact-us.html">Contact us</a>
         </ul>
+        <div id="menu_bars" class="bars" onclick="handleMenuClick()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
     <main>
         <section class="landing">
@@ -90,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="article">
             <h2>Why Choose Us for Power Backup Systems Installation Consultation</h2>
             <p>
                 At our company, we specialize in providing customized solutions that meet the unique energy needs of our clients. We understand that every home and
@@ -98,39 +111,39 @@
                 power backup systems installation consultation:
             </p>
             <ul>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/expertise illustration.png" alt="expertise illustration" />
                     </div>
                     <p>
-                        1. Expertise: Our team of experts has years of experience in installing backup energy systems of all sizes. We stay up-to-date with the 
+                        <strong>1. Expertise:</strong> Our team of experts has years of experience in installing backup energy systems of all sizes. We stay up-to-date with the 
                         latest industry trends and technology to provide our clients with the best solutions.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/customization illustration.png" alt="customization illustration" />
                     </div>
                     <p>
-                        2. Customized solutions: We work closely with our clients to understand their energy needs and design customized solutions that 
+                        <strong>2. Customized solutions:</strong> We work closely with our clients to understand their energy needs and design customized solutions that 
                         meet their specific requirements. We take into account factors such as the size of the property, the energy consumption, and the budget.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/quality service illustration.png" alt="quality service illustration" />
                     </div>
                     <p>
-                        3. Quality service: We take pride in delivering quality service to our clients. From the initial consultation to the final installation, we
+                        <strong>3. Quality service:</strong> We take pride in delivering quality service to our clients. From the initial consultation to the final installation, we
                         ensure that every step of the process is done with utmost care and attention to detail.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/competitive pricing illustration.png" alt="competitive pricing illustration" />
                     </div>
                     <p>
-                        4. Competitive pricing: Our pricing is competitive and transparent, with no hidden fees or surprises. We believe in providing value for
+                        <strong>4. Competitive pricing:</strong> Our pricing is competitive and transparent, with no hidden fees or surprises. We believe in providing value for
                         money and ensuring that our clients get the best possible service at a reasonable price.
                     </p>
                 </li>
@@ -139,45 +152,45 @@
                 <a class="contact_us" href="#">CONTACT US</a>
             </div>
         </section>
-        <section>
+        <section class="article">
             <h2>What we offer</h2>
             <p>
                 At our company, we offer a range of services related to power backup systems installation. Here are some of the services we provide:
             </p>
             <ul>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/consultation illustration.png" alt="consultation illustration" />
                     </div>
                     <p>
-                        1. Consultation: We offer professional consultation services to help our clients choose the right 
+                        <strong>1. Consultation:</strong> We offer professional consultation services to help our clients choose the right 
                         backup energy system for their home or business.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/installation illustration.png" alt="installation illustration" />
                     </div>
                     <p>
-                        2. Installation: Our team of experts can install backup energy systems of all sizes, from small residential
+                        <strong>2. Installation:</strong> Our team of experts can install backup energy systems of all sizes, from small residential
                         systems to large commercial systems.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/maintenance illustration.png" alt="maintenance illustration" />
                     </div>
                     <p>
-                        3. Maintenance: We offer regular maintenance services to ensure that the backup energy system is
+                        <strong>3. Maintenance:</strong> We offer regular maintenance services to ensure that the backup energy system is
                         functioning properly and efficiently.
                     </p>
                 </li>
-                <li>
+                <li class="listItem">
                     <div>
                         <img src="./images/repair illustration.png" alt="repair illustration" />
                     </div>
                     <p>
-                        4. Repair: In case of any breakdown or malfunction, we offer prompt repair services to ensure that the
+                        <strong>4. Repair:</strong> In case of any breakdown or malfunction, we offer prompt repair services to ensure that the
                         backup energy system is back up and running as soon as possible.
                     </p>
                 </li>
@@ -186,7 +199,7 @@
                 <a class="contact_us" href="#">CONTACT US</a>
             </div>
         </section>
-        <section>
+        <section class="article">
             <p>
                 Power backup systems installation is essential for homes and businesses that require uninterrupted power supply. At our company, we offer professional consultation services to
                 help our clients choose the right backup energy system for their specific needs. We specialize in designing and installing customized solutions that meet our clients' unique
@@ -207,21 +220,22 @@
         <div class="footer_links">
             <ul>
                 <li>Important links</li>
-                <a href = "#">Homepage</a>
-                <a href = "#">About us</a>
-                <a href = "#">Contact us</a>
+                <a href = "./">Homepage</a>
+                <a href = "./about-us.html">About us</a>
+                <a href = "./contact-us.html">Contact us</a>
             </ul>
             <div></div>
             <ul>
                 <li>Our services</li>
-                <a href="#">Commercial Solar PV</a>
-                <a href="#">Residential Solar System</a>
-                <a href="#">Backup systems</a>
-                <a href="#">Load Evaluation, Calculation & System design</a>
-                <a href="#">Consultancy</a>
+                <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                <a href="./residential-solar-pv.html">Residential Solar System</a>
+                <a href="./battery-backup-systems.html">Backup systems</a>
+                <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, Calculation & System design</a>
+                <a href="./consultation.html">Consultancy</a>
             </ul>
         </div>
-        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a href="https://yosambranding.art">Yosam Branding</a></p>
+        <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
+    <script src = "./scripts/menu_click.js"></script>
 </body>
 </html>
