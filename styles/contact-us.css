@@ -116,3 +116,23 @@ main > section > div:first-of-type ul{
 .danger{
     color: red;
 }
+#success{
+    border:1px solid rgb(25, 136, 25);
+    padding: 3rem 1rem;
+    color: rgb(25, 136, 25);
+    text-align: center;
+    display: none;
+}
+#success button{
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    display: block;
+    margin: 2rem auto 0rem auto;
+    color: black;
+}
+#success button:hover{
+    cursor: pointer;
+    border-color: rgb(60, 60, 60);
+}
