@@ -25,7 +25,7 @@
                 <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
             </a>
         </div>
-        <a class="small" href="./">
+        <a class="header_small" href="./">
             <h1>SOLAR PRIME</h1>
         </a>
         <ul class="header_links">
@@ -52,8 +52,19 @@
         </div>
     </header>
     <main>
+        <nav class="navigation menu_info">
+            <ul>
+                <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                <a href="./residential-solar-pv.html">Residential Solar PV System</a>
+                <a href="./battery-backup-systems.html">Backup Systems</a>
+                <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, calculation & system design</a>
+                <a href="./consultation.html">Consulation</a>
+                <a href = "./">Homepage</a>
+                <a href = "./contact-us.html">Contact us</a>
+            </ul>
+        </nav>
         <h1>SOLAR PRIME</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
+        <p>We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible</p>
         <section>
             <div>
                 <p><strong>GET IN TOUCH</strong></p>
@@ -68,23 +79,25 @@
                 <form>
                     <label>Name</label>
                     <div>
-                        <input>
-                        <span class="danger">Error</span>
+                        <input name="name" type="text" required="true">
+                        <span class="danger"></span>
                     </div>
                     <label>Email</label>
                     <div>
-                        <input>
-                        <span class="danger">Error</span>
+                        <input name="email" type="email" required="true">
+                        <span class="danger"></span>
                     </div>
                     <label>Message</label>
                     <div>
-                        <textarea></textarea>
-                        <span class="danger">Error</span>
+                        <textarea name="message" required="true" id="textarea"></textarea>
+                        <span class="danger"></span>
                     </div>
+                    <input type="submit" value="SUBMIT"/>
                 </form>
             </div>
         </section>
     </main>
+    
     <footer class="footer">
         <p><strong>GET IN TOUCH</strong></p>
         <ul class="get_in_touch">
@@ -96,7 +109,7 @@
             <ul>
                 <li>Important links</li>
                 <a href = "./">Homepage</a>
-                <a href = "./about-us.html">About us</a>
+                <!-- <a href = "./about-us.html">About us</a> -->
                 <a href = "./contact-us.html">Contact us</a>
             </ul>
             <div></div>
@@ -111,6 +124,12 @@
         </div>
         <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
+    <script src = "./scripts/contact-us.js"></script>
+    <script>
+        console.log(getRE());
+        document.getElementById("textarea").innerHTML = getRE();
+    </script>
     <script src = "./scripts/menu_click.js"></script>
+    <script src = "./scripts/contact-us.js"></script>
 </body>
 </html>

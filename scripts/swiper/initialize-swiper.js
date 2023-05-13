@@ -1,6 +1,6 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    speed:600,
+    speed:500,
     spaceBetween:10,
     slidesPerView:1,
     direction: 'horizontal',

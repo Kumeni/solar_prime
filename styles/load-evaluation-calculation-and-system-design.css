@@ -11,12 +11,14 @@
     column-gap: 2rem;
     margin: 8rem auto;
 }
+
 .section .image{
-    height:450px;
+    width: 45vw;
+    height: auto;
 }
 .image img{
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 .section:nth-of-type(even) .image{
     grid-area: 1/1/span 1/ span 1;
@@ -26,7 +28,19 @@
     justify-self: right;
 }
 .section .content{
-    width:90%;
+    width:45vw;
+}
+@media (max-width: 768px){
+    .section{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+    .section .image{
+        width:95vw;
+    }
+    .section .content{
+        width: 95vw;
+    }
 }
 .content{
     align-self: center;

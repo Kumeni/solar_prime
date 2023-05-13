@@ -6,6 +6,14 @@ main > section, .form > form{
 main{
     min-height:70vh;
 }
+main h1{
+    margin: 3rem auto;
+}
+main > p{
+    max-width: 900px;
+    padding: 0rem 0.5rem;
+    margin: auto;
+}
 main > section{
     grid-template-columns: max-content 700px;
     grid-template-rows: auto;
@@ -25,6 +33,21 @@ main > section > div:first-of-type{
     justify-self: right;
     /* border: 1px solid black; */
 }
+@media (max-width:943px){
+    main section{
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto;
+        row-gap: 2rem;
+        column-gap: unset;
+        justify-self: center;
+    }
+    .form{
+        margin: auto;
+    }
+    main > section > div:first-of-type{
+        justify-self: center;
+    }
+}
 main > section > div:last-of-type{
     width: 90%;
 }
@@ -37,9 +60,12 @@ main > section > div:first-of-type > p{
 main > section > div:first-of-type ul{
     list-style: none;
 }
+.strong{
+    font-weight: 400;
+}
 .form > h2{
     font-size: 1.3rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 1rem;
 }
 .form > form{
@@ -48,11 +74,45 @@ main > section > div:first-of-type ul{
     row-gap:1rem;
     column-gap:0.5rem;
 }
+@media (max-width: 470px){
+    .form > form{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+    }
+}
 .form > form label{
-    font-weight: 600;
+    font-weight: 500;
+}
+.form > form input[type="submit"]{
+    padding: 1rem 2rem;
+    font-weight: 400;
+    border: none;
+    background-color: rgb(28, 151, 28);
+    color: white;
+    font-size: 1rem;
+    grid-area:4/ 1/ span 1/ span 2;
+    max-width:150px;
+    margin: 2rem auto;
+}
+.form > form input[type="submit"]:hover{
+    cursor: pointer;
+}
+.form > form input[type="submit"]:focus{
+    outline: none;
+    background-color: rgb(25, 136, 25);
 }
 .form > form input, .form > form textarea{
     display: block;
     width: 100%;
-    padding:0.2rem 0.5rem;
+    padding:0.5rem 0.5rem;
+}
+.form > form textarea{
+    height: 6rem;
+    text-align: left;
+}
+.form > form input:focus, .form > form textarea:focus{
+    outline: none;
+}
+.danger{
+    color: red;
 }

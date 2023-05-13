@@ -83,12 +83,6 @@
     border:none;
     border-radius: 5px;
 }
-@media (max-width: 768px){
-    .landing > div:first-of-type > div{
-        width: max-content;
-        margin: 2rem auto 2rem auto;
-    }
-}
 .landing > div:last-of-type{
     position: relative;
     z-index: -2;
@@ -111,5 +105,11 @@
     .landing > div:first-of-type{
         grid-area:2/ 1/ span 1/ span 1;
         padding: 0.5rem 1rem;
+    }
+}
+@media (max-width: 1160px){
+    .landing > div:first-of-type > div{
+        width: max-content;
+        margin: 2rem auto 2rem auto;
     }
 }

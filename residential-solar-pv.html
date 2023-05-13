@@ -27,7 +27,7 @@
                 <img src="./icons/solar prime logo.png" alt = "solar prime logo" />
             </a>
         </div>
-        <a class="small" href="./">
+        <a class="header_small" href="./">
             <h1>SOLAR PRIME</h1>
         </a>
         <ul class="header_links">
@@ -53,7 +53,18 @@
             <div></div>
         </div>
     </header>
-    <main>
+    <main class="main">
+        <nav class="navigation menu_info">
+            <ul>
+                <a href="./commercial-solar-pv.html">Commercial Solar PV</a>
+                <a href="./residential-solar-pv.html">Residential Solar PV System</a>
+                <a href="./battery-backup-systems.html">Backup Systems</a>
+                <a href="./load-evaluation-calculation-and-system-design.html">Load Evaluation, calculation & system design</a>
+                <a href="./consultation.html">Consulation</a>
+                <a href = "./">Homepage</a>
+                <a href = "./contact-us.html">Contact us</a>
+            </ul>
+        </nav>
         <section class="landing">
             <div>
                 <h1>RESIDENTIAL SOLAR PV INSTALLATION IN KENYA</h1>
@@ -62,7 +73,9 @@
                     us today for expert residential solar installation services that meet your energy needs
                     and budget.
                 </p>
-                <button>CONTACT US</button>
+                <div>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
+                </div>
             </div>
             <div>
                 <!-- Slider main container -->
@@ -74,14 +87,20 @@
                         <img src="./images/roof mount residential solar pv.png" alt="residential monocrystalline roof mount solar pv panels"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/commercial solar pv installation.png" alt="commercial solar pv installation"/>
+                        <img src="./images/residential polycrystalline solar pv.png" alt="polycrystalline roof mount solar pv panels installation in kenya" />
                     </div>
                     
                     <div class="swiper-slide">
-                        <img src="./images/residential solar pv installation.png" alt="residential solar pv installation"/>
+                        <img src="./images/installed roof mount solar pv.png" alt="polycrystalline roof mount solar pv" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./images/battery backup.png" alt="battery backup"/>
+                        <img src="./images/polycrystalline solar mount solar pv.png" alt="polycrystalline roof mount solar pv" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/monocrystalline residential solar pv.png" alt="roof mount residential monocrystalline solar pv panels" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/polycrystalline roof mount solar pv.png" alt="residential polycrystalline roof mount solar pv installation in kenya" />
                     </div>
                     <!-- <div class="swiper-slide">
                         <img src="./images/office.png" alt="office"/>
@@ -110,7 +129,7 @@
                     affordable energy future!
                 </p>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation Pricing \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -131,7 +150,7 @@
                     <li>Promotes sustainable development</li>
                 </ol>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -148,7 +167,7 @@
                     the panels to maximize solar energy production.
                 </p>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -164,7 +183,7 @@
                     the right system depending on your energy needs and budget.
                 </p>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -180,7 +199,7 @@
                     the successful installation and operation of you solar PV system.
                 </p>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -197,7 +216,7 @@
                     early and prevent downtime.
                 </p>
                 <div>
-                    <a class="contact_us" href="#">CONTACT US</a>
+                    <a onclick="createRE('RE: Residential Solar PV Installation \n')" href="./contact-us.html" class="contact_us" href="#">CONTACT US</a>
                 </div>
             </div>
             <div class = "image">
@@ -216,7 +235,7 @@
             <ul>
                 <li>Important links</li>
                 <a href = "./">Homepage</a>
-                <a href = "./about-us.html">About us</a>
+                <!-- <a href = "./about-us.html">About us</a> -->
                 <a href = "./contact-us.html">Contact us</a>
             </ul>
             <div></div>
@@ -232,6 +251,7 @@
         <p class="copyright"> &copy; Copyright 2023 ~ All Rights Reserved | Maintained by <a target="_blank" href="https://yosambranding.art">Yosam Branding</a></p>
     </footer>
     <script src = "./scripts/menu_click.js"></script>
+    <script src = "./scripts/contact-us.js"></script>
     <script src = "./scripts/swiper/swiper-bundle.min.js"></script>
     <script src = "./scripts/swiper/initialize-swiper.js"></script>
 </body>

@@ -10,6 +10,11 @@
     max-width:1000px;
     margin:4rem auto;
 }
+@media (max-width: 1050px){
+    .article{
+        margin: 4rem 1rem;
+    }
+}
 .article > h2{
     text-align: center;
     font-weight:400;
@@ -40,6 +45,16 @@
 .listItem img{
     width: 100%;
     height: auto;
+}
+@media (max-width: 660px){
+    .listItem{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+    }
+    .listItem > div{
+        width:150px;
+        margin: 2rem auto;
+    }
 }
 .listItem strong{
     font-weight: 500;

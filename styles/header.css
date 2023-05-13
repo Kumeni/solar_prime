@@ -10,6 +10,7 @@
     max-width:1400px;
     margin: auto;
     position: sticky;
+    z-index:100;
     top: 0px;
     padding:0.5rem 5rem 0rem 5rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -64,15 +65,15 @@
 .header_services > div:first-of-type:hover{
     cursor: pointer;
 }
-.bars,.small{
+.bars,.header_small, .navigation{
     display: none;
 }
-.small{
+.header_small{
     text-decoration: none;
     color: black;
     align-self: center;
 }
-.small > h1{
+.header_small > h1{
     font-size:1.4rem;
     font-weight: 500;
 }
@@ -94,6 +95,32 @@
 .bars > div:last-of-type{
     width:25%;
 }
+main{
+    position:relative;
+    overflow: hidden;
+}
+.navigation{
+    position: absolute;
+    z-index:100;
+    width:0%;
+    min-height: 80vh;
+    background-color: white;
+    transition: width 1s;
+    /*white-space: nowrap;
+    overflow: hidden;*/
+}
+.navigation ul{
+    position: absolute;
+    right: 0px;
+    width: 100vw;
+}
+.navigation ul a{
+    display: block;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
 @media(max-width: 767px){
     .header{
         padding:1rem 1.5rem 1rem 1.5rem;
@@ -102,7 +129,7 @@
     .logo, .header_links{
         display: none;
     }
-    .bars, .small{
+    .bars, .header_small, .navigation{
         display: block;
     }
 }
